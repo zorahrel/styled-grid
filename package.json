@@ -10,6 +10,7 @@
   "author": "Attilio Cianci <zorahrel@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "clean": "rm -rf ./dist/*",
     "start": "NODE_ENV=development webpack-dev-server --hot --inline --config webpack.config.js",
     "build": "NODE_ENV=production webpack --optimize-minimize --config webpack.config.js"
   },
