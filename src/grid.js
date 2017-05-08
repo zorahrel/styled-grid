@@ -28,6 +28,13 @@ const queries = props => Object.keys(props.theme.breakpoints || breakpoints).red
   return accumulator;
 }, []);
 
+// Styled Row
+export const Row = styled.div`
+  width: 100%;
+  margin-left: -${pad}px;
+  margin-right: -${pad}px;
+`;
+
 // Styled Col
 export const Col = styled.div`
   box-sizing: border-box;
@@ -38,13 +45,6 @@ export const Col = styled.div`
   padding-right: ${pad}px;
   width: 100%;
   ${queries}
-`;
-
-// Styled Row
-export const Row = styled.div`
-  width: 100%;
-  margin-left: -${pad}px;
-  margin-right: -${pad}px;
 `;
 
 // Helpers
