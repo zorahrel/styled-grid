@@ -1,6 +1,6 @@
 {
-  "name": "styled-grid",
-  "version": "1.0.0",
+  "name": "styled-grid-system",
+  "version": "1.0.2",
   "description": "Easy-to-use responsive React Grid System built with styled-components.",
   "main": "dist/styled-grid.js",
   "repository": {
@@ -12,6 +12,7 @@
   "scripts": {
     "clean": "rm -rf ./dist/*",
     "start": "NODE_ENV=development webpack-dev-server --hot --inline --config webpack.config.js",
+    "prepublish": "NODE_ENV=production webpack --config webpack.config.js",
     "build": "NODE_ENV=production webpack --optimize-minimize --config webpack.config.js"
   },
   "dependencies": {
