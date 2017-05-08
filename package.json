@@ -1,0 +1,12 @@
+{
+  "name": "styled-grid",
+  "version": "1.0.0",
+  "description": "Easy-to-use responsive React Grid System built with styled-components.",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zorahrel/styled-grid" 
+  },
+  "author": "Attilio Cianci <zorahrel@gmail.com>",
+  "license": "MIT"
+}
