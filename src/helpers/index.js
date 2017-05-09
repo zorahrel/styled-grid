@@ -11,7 +11,7 @@ export const breakpoints = {
 const toEm = px => px / 16;
 
 // iterate through the breakpoints and create a media template
-export const media = size => Object.keys(breakpoints).reduce((accumulator, label) => {
+export const media = Object.keys(breakpoints).reduce((accumulator, label) => {
   // use em in breakpoints to work properly cross-browser and support users
   // changing their browsers font-size: https://zellwk.com/blog/media-query-units/
   accumulator[label] = (...args) => css`
