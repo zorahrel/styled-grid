@@ -30,7 +30,6 @@ const queries = props => Object.keys(props.theme.breakpoints || breakpoints).red
 
 // Styled Row
 export const Row = styled.div`
-  width: 100%;
   margin-left: -${pad}px;
   margin-right: -${pad}px;
 `;
