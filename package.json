@@ -1,6 +1,6 @@
 {
   "name": "styled-grid-system",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "Easy-to-use responsive React Grid System built with styled-components.",
   "main": "dist/styled-grid.js",
   "repository": {

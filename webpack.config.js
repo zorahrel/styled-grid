@@ -9,7 +9,9 @@ module.exports = {
     },
     output: {
         filename: '[name].js',
-        path: __dirname + '/dist/'
+        path: __dirname + '/dist/',
+        library: 'styledGridSystem',
+        libraryTarget: 'umd'
     },
     resolve: {
         extensions: ['.js'],
