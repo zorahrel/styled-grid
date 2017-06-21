@@ -1,6 +1,6 @@
 {
   "name": "styled-grid-system",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Easy-to-use responsive React Grid System built with styled-components.",
   "main": "dist/styled-grid.js",
   "repository": {
@@ -16,17 +16,17 @@
     "build": "NODE_ENV=production webpack --optimize-minimize --config webpack.config.js"
   },
   "dependencies": {
-    "babel-core": "^6.24.1",
-    "babel-loader": "^7.0.0",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.0",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "component-directory-webpack-plugin": "^1.0.5",
-    "file-loader": "^0.11.1",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "styled-components": "^1.4.6",
-    "webpack": "^2.5.1",
-    "webpack-dev-server": "^2.4.5"
+    "file-loader": "^0.11.2",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "styled-components": "^2.1.0",
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.5.0"
   }
 }

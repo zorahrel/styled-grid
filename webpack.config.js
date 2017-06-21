@@ -8,10 +8,10 @@ module.exports = {
         'docs': ['./docs/index.html', './docs/index.js']
     },
     output: {
-        filename: '[name].js',
         path: __dirname + '/dist/',
-        library: 'styledGridSystem',
-        libraryTarget: 'umd'
+        filename: '[name].js',
+        libraryTarget: 'umd',
+        library: 'styledGridSystem'
     },
     resolve: {
         extensions: ['.js'],
@@ -21,6 +21,14 @@ module.exports = {
     plugins: [
         new webpack.EnvironmentPlugin(['NODE_ENV'])
     ],
+    externals: {
+        react: {
+            root: 'React',
+            commonjs2: 'react',
+            commonjs: 'react',
+            amd: 'react',
+        },
+    },
     module: {
         loaders: [
             {
