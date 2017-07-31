@@ -8,7 +8,7 @@ const pad = props => typeof props.theme.gutter === 'number' ? props.theme.gutter
 const valign = props => props.valign || 'top';
 
 // Grid content horizontal align
-const textAlign = props => props.textAlign || 'left';
+const textAlign = props => props.textAlign && `text-align: ${props.textAlign}`;
 
 // Media queries for width and shift
 const queries = props => Object.keys(props.theme.breakpoints || breakpoints).reduce((accumulator, point) => {
@@ -44,8 +44,8 @@ export const Col = styled.div`
   width: 100%;
 
   vertical-align: ${valign};
-  text-align: ${textAlign};
   padding-left: ${pad}px;
+  ${textAlign};
   ${queries}
 `;
 
