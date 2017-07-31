@@ -34,18 +34,18 @@ export const Row = styled.div`
   padding: 0;
   list-style: none;
   margin-left: -${pad}px;
-  margin-right: -${pad}px;
 `;
 
 // Styled Col
 export const Col = styled.div`
   box-sizing: border-box;
   display: inline-block;
+  margin-left: 0;
+  width: 100%;
+
   vertical-align: ${valign};
   text-align: ${textAlign};
   padding-left: ${pad}px;
-  padding-right: ${pad}px;
-  width: 100%;
   ${queries}
 `;
 
