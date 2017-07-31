@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { breakpoints, media } from './helpers/';
 
 // Grid gutter
-const pad = props => typeof props.theme.gutter === 'number' ? props.theme.gutter : 32;
+const pad = props => typeof props.theme.gutter === 'number' ? props.theme.gutter : 24;
 
 // Grid content vertical align
 const valign = props => props.valign || 'top';
